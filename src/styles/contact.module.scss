@@ -1,0 +1,78 @@
+@use './variables';
+
+.contactSection {
+  border-top: 1px solid variables.$black;
+  background-color: variables.$primary;
+  color: variables.$secondary;
+
+  h1 {
+    margin-bottom: 1.1em;
+  }
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 6rem 0;
+
+  @media only screen and (max-width: 112.5em) {
+    max-width: 70rem;
+  }
+
+  @media only screen and (max-width: 75em) {
+    max-width: 100%;
+    margin-top: 2rem;
+    padding: 4rem 5rem;
+  }
+
+  @media only screen and (max-width: 37.5em) {
+    margin-top: 2rem;
+    padding: 3rem 1.5rem;
+  }
+}
+
+.logo {
+  max-width: 5%;
+}
+
+.contactInfo {
+  max-width: 35rem;
+
+  .cta {
+    width: 80%;
+    margin-bottom: 2em;
+
+    @media only screen and (max-width: 37.5em) {
+      width: 100%;
+    }
+  }
+
+  .socialLinks {
+    display: grid;
+    border-top: 1px solid variables.$secondary;
+    padding-top: 2em;
+
+    grid-template-columns: repeat(auto-fit, minmax(12em, 1fr));
+    row-gap: 2em;
+
+    h6 {
+      margin-bottom: 0.8em;
+    }
+
+    ul {
+      list-style-type: none;
+    }
+
+    li {
+      padding-bottom: 1em;
+    }
+
+    a:link,
+    a:visited {
+      color: variables.$white;
+    }
+  }
+}

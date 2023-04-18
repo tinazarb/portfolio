@@ -1,0 +1,28 @@
+@use './variables';
+
+.navbarSection {
+  ul {
+    display: flex;
+  }
+
+  li {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+    text-align: right;
+
+    @media only screen and (max-width: 75em) {
+      font-size: 1.25rem;
+    }
+
+    @media only screen and (max-width: 37.5em) {
+      font-size: 1rem;
+      padding: 0.75rem;
+    }
+  }
+
+  a:link,
+  a:visited {
+    color: variables.$white;
+    padding-bottom: 5px;
+  }
+}
