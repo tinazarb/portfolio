@@ -11,23 +11,6 @@ const About = () => {
         <div className={styles.textContainer}>
           <div className={styles.description}>
             <p>
-              I'm currently volunteering as a full stack developer at{' '}
-              <a
-                href="https://dev.311-data.org/map"
-                rel="noopener noreferrer"
-                target="_blank">
-                311 Data
-              </a>{' '}
-              under{' '}
-              <a
-                href="https://github.com/hackforla/311-data"
-                rel="noopener noreferrer"
-                target="_blank">
-                Hack for LA
-              </a>{' '}
-              at Code for America.
-            </p>
-            <p>
               I attended{' '}
               <a
                 href="https://www.gracehopper.com/"
